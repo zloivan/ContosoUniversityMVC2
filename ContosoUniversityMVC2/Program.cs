@@ -23,7 +23,7 @@ namespace ContosoUniversityMVC2
                 try
                 {
                     var context = services.GetRequiredService<SchoolContext>();
-                    DbInitializer.Initialize(context);
+                    ComplexDbInitializer.Initialize(context);
                 }
                 catch (Exception ex)
                 {
